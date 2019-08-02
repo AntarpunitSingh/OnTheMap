@@ -12,7 +12,6 @@ struct SessionResponse: Codable {
     var account: Account
     var session: Session
 }
-
 struct Account: Codable {
     var registered: Bool
     var key: String

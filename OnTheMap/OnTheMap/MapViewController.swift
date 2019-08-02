@@ -26,7 +26,7 @@ class MapViewController: UIViewController, MKMapViewDelegate {
     // The map. See the setup in the Storyboard file. Note particularly that the view controller
     // is set up as the map view's delegate.
     @IBOutlet weak var mapView: MKMapView!
-     let annotation = MKPointAnnotation()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         mapView.delegate = self
@@ -59,13 +59,13 @@ class MapViewController: UIViewController, MKMapViewDelegate {
                 let mediaURL = dictionary.mediaURL
                 
                 // Here we create the annotation and set its coordiate, title, and subtitle properties
-               
-                self.annotation.coordinate = coordinate
-                self.annotation.title = "\(first) \(last)"
-                self.annotation.subtitle = mediaURL
+                let annotation = MKPointAnnotation()
+                annotation.coordinate = coordinate
+                annotation.title = "\(first) \(last)"
+                annotation.subtitle = mediaURL
                 
                 // Finally we place the annotation in an array of annotations.
-                annotations.append(self.annotation)
+                annotations.append(annotation)
             }
                 DispatchQueue.main.async {
                     self.mapView.addAnnotations(annotations)
@@ -120,11 +120,5 @@ class MapViewController: UIViewController, MKMapViewDelegate {
     //            app.openURL(NSURL(string: annotationView.annotation.subtitle))
     //        }
     //    }
-    
-    // MARK: - Sample Data
-    
-    // Some sample data. This is a dictionary that is more or less similar to the
-    // JSON data that you will download from Parse.
-    
 
 }

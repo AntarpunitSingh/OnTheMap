@@ -26,6 +26,7 @@ class LoginViewController: UIViewController {
     func handleSessionRequest(success:Bool ,error:Error?){
         if success{
             DispatchQueue.main.async {
+                print("Session id\(OTMClient.Auth.userId)")
                 self.performSegue(withIdentifier: "Show", sender: nil)
             }
             

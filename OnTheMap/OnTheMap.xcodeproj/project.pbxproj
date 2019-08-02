@@ -12,6 +12,12 @@
 		5B2F63A122EFCF4A003767CE /* SessionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2F63A022EFCF4A003767CE /* SessionResponse.swift */; };
 		5B820BC522F16827004E5976 /* StudentInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B820BC422F16827004E5976 /* StudentInfo.swift */; };
 		5B820BC722F1683F004E5976 /* StudentLocations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B820BC622F1683F004E5976 /* StudentLocations.swift */; };
+		5B924DD822F3D1BC0016BFFD /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B924DD722F3D1BC0016BFFD /* UIViewControllerExtension.swift */; };
+		5B924DDA22F3EF620016BFFD /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B924DD922F3EF620016BFFD /* LocationViewController.swift */; };
+		5B924DDC22F406900016BFFD /* FindMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B924DDB22F406900016BFFD /* FindMapViewController.swift */; };
+		5B924DDE22F4B4970016BFFD /* PostStudentLoc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B924DDD22F4B4970016BFFD /* PostStudentLoc.swift */; };
+		5B924DE022F4B5C90016BFFD /* PostStudentResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B924DDF22F4B5C90016BFFD /* PostStudentResponse.swift */; };
+		5B924DE222F4CB0D0016BFFD /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B924DE122F4CB0D0016BFFD /* UserProfile.swift */; };
 		5BAD4F4522EBED55008684CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAD4F4422EBED55008684CB /* AppDelegate.swift */; };
 		5BAD4F4722EBED55008684CB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAD4F4622EBED55008684CB /* LoginViewController.swift */; };
 		5BAD4F4A22EBED55008684CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BAD4F4822EBED55008684CB /* Main.storyboard */; };
@@ -28,6 +34,12 @@
 		5B2F63A022EFCF4A003767CE /* SessionResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionResponse.swift; sourceTree = "<group>"; };
 		5B820BC422F16827004E5976 /* StudentInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentInfo.swift; sourceTree = "<group>"; };
 		5B820BC622F1683F004E5976 /* StudentLocations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentLocations.swift; sourceTree = "<group>"; };
+		5B924DD722F3D1BC0016BFFD /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		5B924DD922F3EF620016BFFD /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
+		5B924DDB22F406900016BFFD /* FindMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindMapViewController.swift; sourceTree = "<group>"; };
+		5B924DDD22F4B4970016BFFD /* PostStudentLoc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostStudentLoc.swift; sourceTree = "<group>"; };
+		5B924DDF22F4B5C90016BFFD /* PostStudentResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostStudentResponse.swift; sourceTree = "<group>"; };
+		5B924DE122F4CB0D0016BFFD /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
 		5BAD4F4122EBED55008684CB /* OnTheMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnTheMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BAD4F4422EBED55008684CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5BAD4F4622EBED55008684CB /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -55,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				5B2F639E22EFCEE9003767CE /* SessionRequest.swift */,
+				5B924DDD22F4B4970016BFFD /* PostStudentLoc.swift */,
 			);
 			path = Request;
 			sourceTree = "<group>";
@@ -65,6 +78,8 @@
 				5B2F63A022EFCF4A003767CE /* SessionResponse.swift */,
 				5B820BC422F16827004E5976 /* StudentInfo.swift */,
 				5B820BC622F1683F004E5976 /* StudentLocations.swift */,
+				5B924DDF22F4B5C90016BFFD /* PostStudentResponse.swift */,
+				5B924DE122F4CB0D0016BFFD /* UserProfile.swift */,
 			);
 			path = Response;
 			sourceTree = "<group>";
@@ -89,11 +104,14 @@
 			isa = PBXGroup;
 			children = (
 				5BAD4F4422EBED55008684CB /* AppDelegate.swift */,
+				5B02DF3E22F174810007ED42 /* StudentModel.swift */,
 				5BAD4F5D22EC8E3C008684CB /* OTMClient.swift */,
 				5BAD4F4622EBED55008684CB /* LoginViewController.swift */,
 				5BAD4F5822EBF6A9008684CB /* MapViewController.swift */,
 				5BAD4F5A22EBF6BE008684CB /* ListViewController.swift */,
-				5B02DF3E22F174810007ED42 /* StudentModel.swift */,
+				5B924DD722F3D1BC0016BFFD /* UIViewControllerExtension.swift */,
+				5B924DD922F3EF620016BFFD /* LocationViewController.swift */,
+				5B924DDB22F406900016BFFD /* FindMapViewController.swift */,
 				5B2F639C22EFCEA9003767CE /* Request */,
 				5B2F639D22EFCEC2003767CE /* Response */,
 				5BAD4F4822EBED55008684CB /* Main.storyboard */,
@@ -178,12 +196,18 @@
 				5BAD4F4722EBED55008684CB /* LoginViewController.swift in Sources */,
 				5BAD4F5922EBF6A9008684CB /* MapViewController.swift in Sources */,
 				5B820BC722F1683F004E5976 /* StudentLocations.swift in Sources */,
+				5B924DDA22F3EF620016BFFD /* LocationViewController.swift in Sources */,
 				5B02DF3F22F174810007ED42 /* StudentModel.swift in Sources */,
+				5B924DE022F4B5C90016BFFD /* PostStudentResponse.swift in Sources */,
 				5B2F639F22EFCEE9003767CE /* SessionRequest.swift in Sources */,
+				5B924DDE22F4B4970016BFFD /* PostStudentLoc.swift in Sources */,
+				5B924DDC22F406900016BFFD /* FindMapViewController.swift in Sources */,
 				5B2F63A122EFCF4A003767CE /* SessionResponse.swift in Sources */,
 				5BAD4F5E22EC8E3C008684CB /* OTMClient.swift in Sources */,
 				5BAD4F5B22EBF6BE008684CB /* ListViewController.swift in Sources */,
+				5B924DE222F4CB0D0016BFFD /* UserProfile.swift in Sources */,
 				5BAD4F4522EBED55008684CB /* AppDelegate.swift in Sources */,
+				5B924DD822F3D1BC0016BFFD /* UIViewControllerExtension.swift in Sources */,
 				5B820BC522F16827004E5976 /* StudentInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -333,6 +357,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YNJ3NH92GU;
 				INFOPLIST_FILE = OnTheMap/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -351,6 +376,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YNJ3NH92GU;
 				INFOPLIST_FILE = OnTheMap/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
